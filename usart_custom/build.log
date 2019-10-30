@@ -1,0 +1,91 @@
+SDK Version: 4FF7529F, ZentriOS Version: ZentriOS-WZ-3.6.4.0, Platform: AMW106
+Compiling app_external_usart_custom
+C:/Users/gp190/AppData/Roaming/SPB_Data/Zentri/workspace/usart_custom/main.c: In function 'uart_rx_event_handler':
+C:/Users/gp190/AppData/Roaming/SPB_Data/Zentri/workspace/usart_custom/main.c:111:21: warning: unused variable 'handle' [-Wunused-variable]
+     zos_hs_handle_t handle = (zos_hs_handle_t)arg;
+                     ^
+C:/Users/gp190/AppData/Roaming/SPB_Data/Zentri/workspace/usart_custom/main.c: At top level:
+C:/Users/gp190/AppData/Roaming/SPB_Data/Zentri/workspace/usart_custom/main.c:20:17: warning: 'ptr' defined but not used [-Wunused-variable]
+ static uint8_t *ptr = rx_buffer;
+                 ^
+C:/Users/gp190/AppData/Roaming/SPB_Data/Zentri/workspace/usart_custom/main.c:24:19: warning: 'toggle1' defined but not used [-Wunused-variable]
+ static zos_bool_t toggle1;
+                   ^
+C:/Users/gp190/AppData/Roaming/SPB_Data/Zentri/workspace/usart_custom/main.c: In function 'uart_rx_event_handler':
+C:/Users/gp190/AppData/Roaming/SPB_Data/Zentri/workspace/usart_custom/main.c:111:21: warning: unused variable 'handle' [-Wunused-variable]
+     zos_hs_handle_t handle = (zos_hs_handle_t)arg;
+                     ^
+C:/Users/gp190/AppData/Roaming/SPB_Data/Zentri/workspace/usart_custom/main.c: At top level:
+C:/Users/gp190/AppData/Roaming/SPB_Data/Zentri/workspace/usart_custom/main.c:20:17: warning: 'ptr' defined but not used [-Wunused-variable]
+ static uint8_t *ptr = rx_buffer;
+                 ^
+C:/Users/gp190/AppData/Roaming/SPB_Data/Zentri/workspace/usart_custom/main.c:24:19: warning: 'toggle1' defined but not used [-Wunused-variable]
+ static zos_bool_t toggle1;
+                   ^
+Compiling Zentri_Platform_Common
+Copying debug symbols to project directory ...
+Making external_usart_custom-debug.zap
+Generating Application ...
+
++---------------------+--------------+---------+
+| Section             | Size (bytes) | % Total |
++---------------------+--------------+---------+
+| Zero Init (.bss)    |     3.00K    |   42.9  |
+| Global Data (.data) |         4    |    0.1  |
+| Zap Thread Stack    |     4.00K    |   57.1  |
+| Total               |     7.01K    |    -    |
++---------------------+--------------+---------+
+RAM Usage: 7.01K of 57.50K (12.2%)
++---------------------+--------------+---------+
+| Section             | Size (bytes) | % Total |
++---------------------+--------------+---------+
+| Zap Headers         |        96    |   14.7  |
+| Code (.text)        |       480    |   73.6  |
+| Read-Only (.rodata) |        68    |   10.4  |
+| Zap Settings        |         4    |    0.6  |
+| Global Data Init    |         4    |    0.6  |
+| Total               |       652    |    -    |
++---------------------+--------------+---------+
+Flash Usage: 652 of 32.00K (2.0%)
+
+Build complete
+Downloading/running application on device ...
+09:30:27.961 [INFO] Verifying DMS credentials ...
+09:30:29.91 [INFO] DMS credentials valid
+09:30:29.138 [INFO] Retrieving available platforms from DMS ...
+09:30:29.315 [INFO] 3 platforms available
+09:30:29.321 [INFO] Probing for connected device ...
+09:30:29.322 [INFO] Discovering device connected to local computer ...
+09:30:30.296 [INFO] Starting OpenOCD server for AMW106 ...
+09:30:31.193 [INFO] Success
+09:30:31.194 [INFO] Device discovered
+09:30:31.194 [INFO] Successfully discovered device
+09:30:31.197 [INFO] Retrieving device information ...
+09:30:31.380 [INFO] Gathering device information from SDK
+09:30:31.380 [INFO] Attempting to connect to ZentriOS
+09:30:32.733 [INFO] Retrieving UUID ...
+09:30:32.795 [INFO] Retrieving ZentriOS version ...
+09:30:32.861 [INFO] Retrieving SDK version ...
+09:30:32.918 [INFO] Retrieving security information ...
+09:30:32.980 [INFO] Retrieving MAC address ...
+09:30:33.262 [INFO] Successfully retrieved device information
+09:30:33.263 [INFO] Device UUID: 3641304100000000530025001251353132373632
+09:30:33.265 [INFO] SDK Version: 4FF7529F
+09:30:33.265 [INFO] OS Version: ZENTRI-AMW136_ZAP-3.6.4.0, 2018-11-05T01:18:21Z, ZentriOS-WZ-3.6.4.0, Board:AMW136-E06.1
+09:30:33.266 [INFO] MAC address: 4C55CC12E584
+09:30:33.305 [INFO] Verifying device platform ...
+09:30:33.306 [INFO] Verifying device SDK version ...
+09:30:33.312 [INFO] Success
+09:30:33.319 [INFO] Programming ZentriOS image ...
+09:30:33.321 [INFO] Erasing internal flash ...
+09:30:35.298 [INFO] Programming internal flash image ...
+09:30:37.326 [INFO] Success
+09:30:37.359 [INFO] No resources to download!
+Exception in thread devconn_updater:
+Traceback (most recent call last):
+  File "C:\Python27\Lib\threading.py", line 810, in __bootstrap_inner
+  File "C:\Python27\Lib\threading.py", line 763, in run
+  File "C:\Users\reed\workspace\zentrios_sdk\tools\utils\app\dev_connect\view\update_devconnect_view.py", line 51, in run
+UnboundLocalError: local variable 'e' referenced before assignment
+
+Finished
